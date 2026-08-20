@@ -1,0 +1,78 @@
+name = package15_chiplet_smoke
+output_dir = ../build/package15_default_smoke
+coordinate_scale = 0.001
+initial_temperature = 293.15
+start_time = 0
+time_step = 0.05
+time_steps = 100
+penalty_factor = 15
+penalty_mode = harmonic
+interface_scheme = sipg
+penalty_scaling = p_p1
+auto_interfaces = false
+
+# H1-H8 use one identical mesh/material/power template with translations.
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 0, 0.002, 0.029, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 1, 0.015, 0.029, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 2, 0.028, 0.029, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 3, 0.041, 0.029, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 4, 0.002, 0.005, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 5, 0.015, 0.005, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 6, 0.028, 0.005, 0.0008
+domain = ../data/generated/package15/smoke/hbm.mphtxt, HBMEffective, 40, 2300, 700
+domain_offset_m = 7, 0.041, 0.005, 0.0008
+
+domain = ../data/generated/package15/smoke/logic.mphtxt, SiliconLogic, 130, 2330, 700
+domain_offset_m = 8, 0.016, 0.014, 0.0008
+
+domain = ../data/generated/package15/smoke/interposer.mphtxt, SiliconInterposer, 120, 2330, 700
+domain_offset_m = 9, 0, 0, 0
+domain = ../data/generated/package15/smoke/interposer.mphtxt, SiliconInterposer, 120, 2330, 700
+domain_offset_m = 10, 0.013, 0, 0
+domain = ../data/generated/package15/smoke/interposer.mphtxt, SiliconInterposer, 120, 2330, 700
+domain_offset_m = 11, 0.026, 0, 0
+domain = ../data/generated/package15/smoke/interposer.mphtxt, SiliconInterposer, 120, 2330, 700
+domain_offset_m = 12, 0.039, 0, 0
+
+domain = ../data/generated/package15/smoke/substrate.mphtxt, OrganicSubstrate, 8, 1800, 1000
+domain_offset_m = 13, -0.002, -0.002, -0.0015
+domain = ../data/generated/package15/smoke/baseplate.mphtxt, CopperBaseplate, 385, 8960, 385
+domain_offset_m = 14, -0.004, -0.004, -0.0035
+
+dirichlet = 14, 5, 293.15
+
+heat_source = 0, 1, 4
+heat_source = 1, 1, 4
+heat_source = 2, 1, 4
+heat_source = 3, 1, 4
+heat_source = 4, 1, 4
+heat_source = 5, 1, 4
+heat_source = 6, 1, 4
+heat_source = 7, 1, 4
+heat_source = 8, 1, 20
+
+interface = 0, 9, 5, 6
+interface = 4, 9, 5, 6
+interface = 1, 10, 5, 6
+interface = 5, 10, 5, 6
+interface = 2, 11, 5, 6
+interface = 6, 11, 5, 6
+interface = 3, 12, 5, 6
+interface = 7, 12, 5, 6
+interface = 8, 10, 5, 6
+interface = 8, 11, 7, 6
+interface = 9, 10, 2, 1
+interface = 10, 11, 2, 1
+interface = 11, 12, 2, 1
+interface = 9, 13, 5, 6
+interface = 10, 13, 5, 6
+interface = 11, 13, 5, 6
+interface = 12, 13, 5, 6
+interface = 13, 14, 5, 6

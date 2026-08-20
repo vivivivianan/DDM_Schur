@@ -1,0 +1,17 @@
+{
+  "component_tag": "comp1",
+  "geometry_tag": "geom1",
+  "heat_physics_tag": "ht",
+  "default_mesh_hmax": 1.5e-6,
+  "subdomains": [],
+  "local_refinement": {
+    "subdomain": 28,
+    "domain_ids": [381, 383],
+    "hmax": 7.5e-7
+  },
+  "solver": {
+    "dt": 1e-9,
+    "t_end": 6e-8,
+    "time_integrator": "crank_nicolson"
+  }
+}

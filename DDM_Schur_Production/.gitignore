@@ -1,0 +1,8 @@
+/build/
+/cache/
+/runs/
+/.vs/
+__pycache__/
+*.pyc
+*.bin
+*.log

@@ -1,0 +1,13 @@
+/build/
+/results/
+/tmp/
+/mor_models/
+/data/generated/package15/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.obj
+*.pdb
+*.ilk
+*.exe

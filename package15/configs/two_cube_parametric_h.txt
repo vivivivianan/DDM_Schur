@@ -1,0 +1,21 @@
+name = two_cube_parametric_h
+output_dir = ../results/two_cube_parametric_h
+coordinate_scale = 0.001
+initial_temperature = 293.15
+start_time = 0
+time_step = 1
+time_steps = 1
+penalty_factor = 15
+penalty_mode = harmonic
+interface_scheme = sipg
+penalty_scaling = p_p1
+auto_interfaces = false
+
+domain = ../data/mesh/cube_fine.mphtxt, Copper, 40, 8960, 385
+domain = ../data/mesh/cube_coarse_top.mphtxt, Copper, 130, 8960, 385
+
+dirichlet = *, 2, 293.15
+convection = 1, 3, 100, 293.15
+heat_source = 0, 1, 5
+heat_source = 1, 2, 10
+interface = 0, 1, 5

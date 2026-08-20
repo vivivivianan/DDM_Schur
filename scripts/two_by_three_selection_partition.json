@@ -1,0 +1,12 @@
+{
+  "component_tag": "comp1",
+  "geometry_tag": "geom1",
+  "heat_physics_tag": "ht",
+  "default_mesh_hmax": 0.002,
+  "subdomains": [
+    {"id": 1, "mesh": {"hmax": 0.0025}},
+    {"id": 2, "mesh": {"hmax": 0.0018}},
+    {"id": 3, "mesh": {"hmax": 0.0022}}
+  ],
+  "solver": {"dt": 1.0, "t_end": 100.0}
+}

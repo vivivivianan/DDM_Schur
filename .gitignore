@@ -1,0 +1,3 @@
+# Separate experimental Git worktrees; each keeps its own history.
+/hybrid_trace_worktree/
+/package15_worktree/

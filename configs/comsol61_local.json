@@ -1,0 +1,8 @@
+{
+  "comsol_version": "6.1.0.252",
+  "comsol_root": "D:/Program Files/COMSOL/COMSOL61/Multiphysics",
+  "output_dir": "data/generated/two_by_three_comsol61",
+  "prefs_dir": "data/generated/two_by_three_comsol61/runtime/prefs",
+  "recovery_dir": "data/generated/two_by_three_comsol61/runtime/recovery",
+  "tmp_dir": "data/generated/two_by_three_comsol61/runtime/tmp"
+}

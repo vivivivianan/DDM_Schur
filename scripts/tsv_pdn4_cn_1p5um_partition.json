@@ -1,0 +1,7 @@
+{
+  "component_tag": "comp1",
+  "geometry_tag": "geom1",
+  "heat_physics_tag": "ht",
+  "default_mesh_hmax": 1.5e-6,
+  "solver": {"dt": 1e-9, "t_end": 2e-7, "time_integrator": "crank_nicolson"}
+}
